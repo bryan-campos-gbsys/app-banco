@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Prestamos</title>
+</head>
+<body>
+<fieldset> 
+    <legend>Datos del Préstamo</legend> 
+    <div> 
+        <label>Identificación Préstamo
+        <input id="idplazo" name="given-idplazo" type="text"> 
+		</label>
+    </div>
+    <div> 
+        <label>Usuario
+        <input id="username" name="username-name" type="text"> 
+		</label>
+    </div>
+    <div> 
+    	<label>Número de Cuenta
+        <input id="numcuenta" name="numcuenta" type="text" required>
+		</label>
+    </div> 
+    <div> 
+        <label>Fecha
+        <input id="fecha" name="fecha" type="date" >
+		</label> 
+    </div> 
+    <div> 
+        <label>Monto Inicial
+        <input id="montonInicial" name="montonInicial">
+		</label> 
+    </div>    
+    <div> 
+        <label>Saldo
+        <input id="saldo" name="saldo" type="tel">
+		</label> 
+    </div> 
+	<div>
+		<label>Plazo
+		<input id="plazo" name="plazo" type="number" min="5" max="18" step="1">
+		</label>
+    </div>
+    
+    <div>
+		<label>Fecha Vencimiento
+		<input id="fechaVencimiento" name="fechaVencimiento" type="date">
+		</label>
+	</div>
+	
+  </fieldset>
+  <br><br>
+  <fieldset> 
+      
+    <legend>Historial de Pagos</legend> 
+
+  </fieldset>
+</body>
+</html>

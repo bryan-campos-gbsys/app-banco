@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="content flex-container">
+  <h1 class="col-4">Transferencia</h1>
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+    <h3 class="etiqueta col-4">Cuenta de Origen:</h3>
+    <br>
+    <select class="styleSelect col-4" name="cuentasOrigen">
+      <option>Seleccione una cuenta...</option>
+     </select>
+    <br>
+    <h3>Cuenta de Destino:</h3>
+    <br>
+    <select class="styleSelect col-4" name="cuentasDestino">
+      <option>Seleccione una cuenta...</option>
+    </select>
+    <br>
+    <br>
+    <input class="styleInput col-4" type="text" name="transferAmount" placeholder="Monto de la transferencia">
+    <br>
+    <br>
+    <input class="styleInput col-4" type="text" name="description" placeholder="Descripción">
+    <br><br>
+    <input class="Confirmar col-4" type="submit" value="Confirmar">
+  </form>
+</div>
+
+</body>
+</html>
