@@ -18,9 +18,9 @@ let autenticar = () => {
     let userIsValid = false;
     for (let user of users) {
         if (user.userName == txtUserName.value && user.password == txtPassword.value) {
+            app.dbRemove("session");
             app.dbSave("session", user);
             userIsValid = true;
-            return;
         }
     }
 
