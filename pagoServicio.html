@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pago de servicios</title>
+</head>
+
+<body>
+    <h2>Recargas</h2><br>
+    <label for="numCel">Número de Celular</label>
+    <input type="number" placeholder="Número de teléfono" id="numCel" size="8" name="numCel" />
+
+    <br><br>
+
+    <label for="numCel">Monto</label>
+    <input type="number" placeholder="Monto" id="monto" min="1" name="monto" />
+
+    <br><br>
+
+    <button onclick="recargar()">Recargar</button>
+
+    <br><br>
+
+    <table id="tablaRecarga">
+        <tr>
+            <th>Usuario</th>
+            <th>Número</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+        </tr>
+        <tr>
+
+        </tr>
+
+    </table>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/pagoServicio.js"></script>
+</body>
+
+</html>

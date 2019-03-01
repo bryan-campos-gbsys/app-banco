@@ -1,6 +1,7 @@
 let app = new App();
 
-if(!app.dbGet("users")){
+
+if (!app.dbGet("users")) {
     let user1 = new User("juan", "patito");
     let user2 = new User("mario", "patito");
 
@@ -9,22 +10,28 @@ if(!app.dbGet("users")){
 }
 
 let autenticar = () => {
+
     let txtUserName = document.getElementById("userName");
     let txtPassword = document.getElementById("password");
 
     let users = app.dbGet("users");
     let userIsValid = false;
     for (let user of users) {
-        if(user.userName == txtUserName.value && user.password == txtPassword.value){
+        if (user.userName == txtUserName.value && user.password == txtPassword.value) {
             app.dbSave("session", user);
             userIsValid = true;
+            return;
         }
     }
 
-    if(userIsValid){
+    if (userIsValid) {
         window.location = "index.html";
-    }else{
+    } else {
         alert("Usuario invalido");
     }
 
+};
+
+let registrarIndex = () => {
+    window.location = "CRUDUsers.html";
 };
