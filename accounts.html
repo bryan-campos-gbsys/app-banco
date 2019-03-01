@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Cuentas </title>
+    <link rel="stylesheet" type="text/css" href="./css/accounts.css">
+    <script src="scripts/app.js"></script>
+    <script src="scripts/models/account.js"></script>
+    <script src="scripts/accounts.js"></script>
+</head>
+<body>
+    <div class="centeredText">
+        <h3> Mis cuentas </h3>
+    </div>
+
+    <div class="table centeredText">
+    <table align="center" id="myTable">
+        <thead>
+            <tr>
+                <th> Número de cuenta </th>
+                <th> Moneda </th>
+                <th> Saldo </th>
+                <th> Tipo de cuenta </th>
+                <th> Eliminar </th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+
+            <td> 11111111</td>
+            <td> Colones</td>
+            <td> 780000</td>
+            <td> Ahorros</td>
+            <td> <button class="btnBlue"> <strong> Eliminar </strong></button></td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    
+    <div class="form">
+        <h3> Agregar cuenta</h3>
+        <form onsubmit="return createAccount()">
+        <select>
+            <option>Colones</option>
+            <option>Dólares</option>
+        </select>    
+        <button type="submit"> Agregar</button>
+        </form>
+    </div>
+
+ 
+   
+   
+  
+  
+
+</body>
+</html>
