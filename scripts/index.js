@@ -4,4 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let spanFecha = document.getElementById("fecha");
     spanFecha.innerText = fechaActual;
+
+    let cuentas = () => {
+        window.location = "index.html";
+    }
+
 }, false);

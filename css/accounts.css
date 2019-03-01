@@ -1,0 +1,27 @@
+td, th {
+    width: 28%;
+    height: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  th {
+    background: lightblue;
+    border-color: white;
+  }
+  body {
+    padding: 1rem;
+  }
+
+  h3{
+      font-size: 180%; 
+  }
+
+  .centeredText{
+      text-align: center;
+  }
+
+  .btnBlue{
+      background-color: rgb(223, 26, 26);
+      color: white;
+  }
+  
