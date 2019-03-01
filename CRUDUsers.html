@@ -2,31 +2,42 @@
 <html>
 
 <head>
-
+    <title> Usuarios </title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="scripts/app.js"></script>
+    <script src="scripts/models/user.js"></script>
+    <script src="scripts/register.js"></script>
 </head>
 
 <body>
 
-    <table id="users">
-        <tr>
-            <th>Usuario</th>
-            <th>Contraseña</th>
-        </tr>
-        <tr>
-            <!-- <td>getUsers()</td>
-            <td>B</td> -->
-        </tr>
-    </table>
+    <div class="centeredText">
+        <h3> Usuarios Registrados </h3>
+    </div>
 
+    <div class="tableUsers">
+        <table align="center" id="table">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Contraseña</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> juan</td>
+                    <td> patito</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <input type="text" id="userNameRegister" />
-    <input type="password" id="passwordRegister" />
-    <button onclick="registrar()">Guardar</button>
-
-    <script src="scripts/app.js"></script>
-    <script src="scripts/models/user.js"></script>
-    <script src="scripts/register.js"></script>
-    <script src="css/style.css"></script>
+    <div class="form">
+        <h3> Agregar usuario</h3>
+        <input type="text" id="userNameRegister" />
+        <input type="password" id="passwordRegister" />
+        <button onclick="registrar()">Guardar</button>
+    </div>
 </body>
 
 </html>
